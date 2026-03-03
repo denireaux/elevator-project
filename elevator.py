@@ -6,8 +6,8 @@ def main():
     
     total_time, visited_log = core_elevator_logic(start_floor, floors_to_visit)
     
-    path_string = ",".join(map(str, visited_log))
-    print(f"{total_time} {path_string}")
+    path_string = ", ".join(map(str, visited_log))
+    print(f"Total travel time (seconds): {total_time}s\nElevator path: {path_string}")
 
 if __name__ == "__main__":
     main()
